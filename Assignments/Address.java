@@ -5,16 +5,7 @@
 // Description  : Address stores address info of a Company instance.
 public class Address {
     private String street= "?", city= "?", state = "?";;
-    
-    public static void main(String[] args){
-        
-        
-        
-        
-        
-        
-        
-    }
+
     
     @Override
     public String toString(){   

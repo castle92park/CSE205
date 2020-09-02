@@ -10,7 +10,7 @@ import java.util.*;
 
 public class Assignment4
  {
-  public static void main (String[] args)
+  public static void main(String[] args)
    {
        // local variables, can be accessed anywhere from the main method
        char input1 = 'Z';
