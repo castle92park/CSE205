@@ -4,7 +4,9 @@
 // Lecture      : MWF 9:40-10:30 AM
 // Description  : Address stores address info of a Company instance.
 public class Address {
-    private String street= "?", city= "?", state = "?";;
+    private String street= "?", city= "?", state = "?";
+    
+    
 
     
     @Override
@@ -12,7 +14,7 @@ public class Address {
         String addr;
         addr = street + ", " + city + ", " + state;
         return addr;
-    }
+    }	// close toString. This method overrides the default toString method and returns a concatenation of address info.
     
     
     public String getStreet(){

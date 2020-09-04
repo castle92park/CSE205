@@ -10,7 +10,7 @@ public class Company {
     private String companyName = "";
     private int numOfEmployees = 0;
     private String nameOfCEO = "";
-    private Address address = new Address();
+    private Address address = new Address();	// all vars private.
     
 public Company() {}
 
@@ -53,15 +53,15 @@ public void setAddress(String street, String city, String state) {
 public String toString() {
 	String company;
 	company = 
-	"\nCompany Name :\t\t" + companyName + "\n" +
+	"\nCompany Name:\t\t" + companyName + "\n" +
 
 	"# of Employees:\t\t" + numOfEmployees + "\n" + 
 
 	"Name of CEO:\t\t" + nameOfCEO + "\n" +
 
-	"Address:\t\t" + address.toString() + "\n"; 
+	"Address:\t\t" + address.toString() + "\n\n"; 
 	
 	return company;
-}
+}	// Returns user the info about the company with address info obtained from Address class.
     
 }
