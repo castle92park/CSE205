@@ -1,4 +1,4 @@
-package Assignments;
+//package Assignments;
 
 import java.text.DecimalFormat;
 
@@ -8,12 +8,12 @@ public class ShippedOrder extends Order{
 	private double shippingFee;
 	
 	public ShippedOrder(String name, int quantity, double price, String address, String way) {
-		this.productName = name; this.quantity = quantity; this.unitPrice = price; 
+		super(name,quantity,price); 
 		this.shippingAddress = address; this.wayOfShipping = way;
 	}	// end of constructor
 	
 	public void setShippingFee() {
-		
+		totalCost = quantity * unitPrice; 
 		if (wayOfShipping.equals("Economy")) {
 			shippingFee = totalCost * 0.06;	// 6% for economy
 		} else if (wayOfShipping.equals("Regular")) {
@@ -27,7 +27,6 @@ public class ShippedOrder extends Order{
 	public void computeTotalCost() {
 		// TODO Auto-generated method stub
 		setShippingFee();
-		totalCost = quantity * unitPrice;
 		totalCost += shippingFee;
 	}
 	

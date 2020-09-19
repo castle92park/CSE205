@@ -1,4 +1,4 @@
-package Assignments;
+//package Assignments;
 
 import java.text.DecimalFormat;
 
@@ -30,7 +30,7 @@ public class NewOrder extends Order{
 	public String toString() {
 		DecimalFormat fmt = new DecimalFormat("$#0.00");
 		String out = 
-				"\nNewOrder" + 
+				"\nNew Order" + 
 				"\nProd. Name:\t\t" + productName + 
 				"\nQuantity:\t\t" + quantity + 
 				"\nUnit Price:\t\t" + fmt.format(unitPrice) +

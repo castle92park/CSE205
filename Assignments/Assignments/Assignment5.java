@@ -1,4 +1,4 @@
-package Assignments;
+//package Assignments;
 
 //Assignment # : 5
 //Name         : Yongsung Park
@@ -70,13 +70,16 @@ public class Assignment5
                      for (Order i : orderList) {
                     	 if (i.getProductName().contentEquals(inputInfo)) {
                     		 found = true;
-                    		 System.out.print("product found\n");
                     		 break;
                     	 } else {
                     		 found = false;
-                    		 System.out.print("product not found\n");
                     	 }
                      }
+                     if (found == true) {
+                		 System.out.print("product found\n");
+                	 } else {
+                		 System.out.print("product not found\n");
+                	 }
 
                      break;
 

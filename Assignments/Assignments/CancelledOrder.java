@@ -1,4 +1,4 @@
-package Assignments;
+//package Assignments;
 
 import java.text.DecimalFormat;
 
@@ -15,7 +15,7 @@ public class CancelledOrder extends Order{
 	
 	@Override
 	public void computeTotalCost() {
-		totalCost *= 0.02 * quantity * unitPrice;
+		totalCost = 0.02 * quantity * unitPrice;
 	}
 	
 	@Override
